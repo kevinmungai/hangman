@@ -148,9 +148,9 @@ gameOver :: Puzzle -> IO ()
 gameOver (Puzzle wordToGuess _ guessed) =
   when (length guessed > 7) $
       do
-       putStrLn "You lose!"
-       putStrLn $ "The word was: " ++ wordToGuess
-       exitSuccess
+        putStrLn "You lose!"
+        putStrLn $ "The word was: " ++ wordToGuess
+        exitSuccess
 
 
 
